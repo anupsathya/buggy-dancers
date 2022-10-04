@@ -76,10 +76,10 @@ $dark-m-purple-mid: #9673b9bb;
 $dark-m-purple-light: #40008050;
 $dark-m-purple-hover: #40008090;
 
-@import 'https://fonts.googleapis.com/css?family=Noto+Sans+Mono';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 * {
-  font-family: 'Noto Sans Mono';
+  font-family: 'Roboto';
 }
 
 html {
@@ -93,35 +93,36 @@ body {
   -webkit-touch-callout: none;
   margin: 0;
   padding: 1rem 1rem;
+  font-size: 24px;
 }
 
 h1 {
-  font-size: 24px !important;
+  font-size: 48px !important;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 18px !important;
-  font-weight: 400;
+  font-size: 36px !important;
+  font-weight: 900;
 }
 
 h3 {
-  font-size: 14px !important;
+  font-size: 24px !important;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 13px !important;
+  font-size: 20px !important;
   font-weight: 900;
 }
 
 h5 {
-  font-size: 12px !important;
+  font-size: 18px !important;
   font-weight: 900;
 }
 
 h6 {
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 600;
 }
 
@@ -1687,7 +1688,8 @@ ul {
   cursor: pointer;
   // display: flex;
   // flex-direction: row;
-  font-size: 0.75rem;
+  font-size: 1.0rem;
+  //font-size: 0.75rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
   margin-top: 0.25rem;
