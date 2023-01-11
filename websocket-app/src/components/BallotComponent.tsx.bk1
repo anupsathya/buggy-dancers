@@ -38,6 +38,9 @@ export default function BallotComponent() {
     {currentBallot.prompts.map((p) => (
       <div className="panel">
       <li key={p.id}>
+      <p>{p.name}</p>
+      <p>{p.description}</p>
+      <p>{p.votes}</p>
       {
         // only render the button if the ballot id is not in the list of already voted ids
         //!isVotedIdInStorage(currentBallot.id) && (
@@ -47,10 +50,6 @@ export default function BallotComponent() {
         // </Button>
         //)
       }
-      <span> ({p.votes}) </span>
-      <span> {p.name}</span>
-      <span> {p.description}</span>
-      <div>&nbsp;</div>
       </li>
       </div>
       ))}

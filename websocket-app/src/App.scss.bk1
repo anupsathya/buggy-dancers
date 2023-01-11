@@ -1688,7 +1688,7 @@ ul {
   cursor: pointer;
   // display: flex;
   // flex-direction: row;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   //font-size: 0.75rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
@@ -1715,13 +1715,11 @@ ul {
   }
 
   &.is-green {
-    background: $green-mid;
-    color: $light;
-    //background: $green-light;
-    //color: $green-mid;
+    background: $green-light;
+    color: $green-mid;
 
     &:hover {
-      background: $green-mid;
+      background: $green-hover;
     }
   }
 

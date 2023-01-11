@@ -1,0 +1,421 @@
+[
+ {
+  "id": "1000",
+  "description": "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.",
+  "prompts": []
+ },
+ {
+  "id": "1001",
+  "description": "What is cuter?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Puppies",
+    "description": "",
+    "votes": 98
+   },
+   {
+    "id": "2",
+    "name": "Kittens",
+    "description": "",
+    "votes": 61
+   },
+   {
+    "id": "3",
+    "name": "Babies",
+    "description": "",
+    "votes": 99
+   }
+  ]
+ },
+ {
+  "id": "1002",
+  "description": "Which color do you prefer?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Red",
+    "description": "",
+    "votes": 231
+   },
+   {
+    "id": "2",
+    "name": "Green",
+    "description": "",
+    "votes": 105
+   },
+   {
+    "id": "3",
+    "name": "Blue",
+    "description": "",
+    "votes": 309
+   }
+  ]
+ },
+ {
+  "id": "1003",
+  "description": "Do you control your technology or does your technology control you?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Technology",
+    "description": "",
+    "votes": 117
+   },
+   {
+    "id": "2",
+    "name": "Me",
+    "description": "",
+    "votes": 195
+   }
+  ]
+ },
+ {
+  "id": "1004",
+  "description": "Should we get on with the show already?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Yes",
+    "description": "",
+    "votes": 375
+   },
+   {
+    "id": "2",
+    "name": "No",
+    "description": "",
+    "votes": 375
+   }
+  ]
+ },
+ {
+  "id": "1005",
+  "description": "Do you believe that humans and robots will live in harmony?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Yes",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "No",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1006",
+  "description": "Choice 1",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Turn Light Green",
+    "description": "",
+    "votes": 164
+   },
+   {
+    "id": "2",
+    "name": "Turn Light Red",
+    "description": "",
+    "votes": 77
+   },
+   {
+    "id": "3",
+    "name": "Turn Light Blue",
+    "description": "",
+    "votes": 156
+   }
+  ]
+ },
+ {
+  "id": "1007",
+  "description": "Choice 2",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1008",
+  "description": "Choice 3",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to shoulder)",
+    "description": "",
+    "votes": 243
+   },
+   {
+    "id": "2",
+    "name": "Move to knee",
+    "description": "",
+    "votes": 223
+   }
+  ]
+ },
+ {
+  "id": "1009",
+  "description": "Choice 4",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to wrist)",
+    "description": "",
+    "votes": 54
+   },
+   {
+    "id": "2",
+    "name": "Move back and forth",
+    "description": "",
+    "votes": 334
+   }
+  ]
+ },
+ {
+  "id": "1010",
+  "description": "Choice 5",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to ankle)",
+    "description": "",
+    "votes": 31
+   },
+   {
+    "id": "2",
+    "name": "Blink light",
+    "description": "",
+    "votes": 402
+   }
+  ]
+ },
+ {
+  "id": "1011",
+  "description": "Choice 6",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (lights change color)",
+    "description": "",
+    "votes": 336
+   },
+   {
+    "id": "2",
+    "name": "Move to wrist",
+    "description": "",
+    "votes": 61
+   }
+  ]
+ },
+ {
+  "id": "1012",
+  "description": "Choice 7",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (lights change color)",
+    "description": "",
+    "votes": 136
+   },
+   {
+    "id": "2",
+    "name": "Move to ankle",
+    "description": "",
+    "votes": 291
+   }
+  ]
+ },
+ {
+  "id": "1013",
+  "description": "Choice 8",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to hand, then belly)",
+    "description": "",
+    "votes": 174
+   },
+   {
+    "id": "2",
+    "name": "Move up leg to belly",
+    "description": "",
+    "votes": 239
+   }
+  ]
+ },
+ {
+  "id": "1014",
+  "description": "Choice 9",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move back and forth)",
+    "description": "",
+    "votes": 172
+   },
+   {
+    "id": "2",
+    "name": "Move to elbow",
+    "description": "",
+    "votes": 216
+   }
+  ]
+ },
+ {
+  "id": "1015",
+  "description": "Choice 10",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to ankle)",
+    "description": "",
+    "votes": 6
+   },
+   {
+    "id": "2",
+    "name": "Vibrate",
+    "description": "",
+    "votes": 282
+   }
+  ]
+ },
+ {
+  "id": "1016",
+  "description": "Choice 11",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to belly)",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Move to shoulder",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1017",
+  "description": "Choice 12",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (lights change color)",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Stop and start to belly",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1018",
+  "description": "Choice 13",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to shoulder)",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Move to shoulder via the ankle",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1019",
+  "description": "Choice 14",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to wrist)",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Cycle through colors and vibrate",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1020",
+  "description": "Choice 15",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move down)",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Move to knee and then to shoulder",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1021",
+  "description": "Choice 16",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (exit via ankle)",
+    "description": "",
+    "votes": 7
+   },
+   {
+    "id": "2",
+    "name": "Leave dancer via the wrist",
+    "description": "",
+    "votes": 398
+   }
+  ]
+ },
+ {
+  "id": "1022",
+  "description": "Choice 17",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Turn Light Green",
+    "description": "",
+    "votes": 285
+   },
+   {
+    "id": "2",
+    "name": "Turn Light Red",
+    "description": "",
+    "votes": 201
+   },
+   {
+    "id": "3",
+    "name": "Turn Light Blue",
+    "description": "",
+    "votes": 9
+   }
+  ]
+ }
+]
