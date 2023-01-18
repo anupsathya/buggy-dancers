@@ -22,3 +22,11 @@ cd websocket-app
 npm install .
 npm start
 ```
+
+### Running stuff without having to keep the terminal open
+
+```
+nohup go run . &
+nohup npm start &
+pkill -u admin
+```
