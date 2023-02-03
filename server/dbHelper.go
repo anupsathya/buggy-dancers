@@ -3,20 +3,20 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"math/rand"
+	"os"
 	"reflect"
 	"strconv"
 	"time"
-	"log"
-	"os"
-	"io/ioutil"
 
 	bolt "go.etcd.io/bbolt"
 )
 
 var db *bolt.DB
 
-var dbId = 1000;
+var dbId = 1000
 
 // TODO: set this to the actual default ballot
 var tempCurrBal string
@@ -52,6 +52,69 @@ func setupDB() (*bolt.DB, error) {
 	return db, nil
 }
 
+//BEGIN FADE STATE STUFF
+
+func setFadeState(db *bolt.DB, fade fadeState) error {
+	confBytes, err := json.Marshal(fade)
+	if err != nil {
+		return fmt.Errorf("could not marshal fade json: %v", err)
+	}
+	err = db.Update(func(tx *bolt.Tx) error {
+		err = tx.Bucket([]byte("DB")).Put([]byte("FADE"), confBytes)
+		if err != nil {
+			return fmt.Errorf("could not set fade: %v", err)
+		}
+		return nil
+	})
+	fmt.Println("Set Fade")
+	return err
+}
+
+func dbGetFadeState(db *bolt.DB) (fadeState, error) {
+	var fad fadeState
+	err := db.View(func(tx *bolt.Tx) error {
+		fadBytes := tx.Bucket([]byte("DB")).Get([]byte("FADE"))
+
+		if err := json.Unmarshal(fadBytes, &fad); err != nil {
+			return fmt.Errorf("could not fetch fade state from db: %v", err)
+		}
+		return nil
+	})
+
+	fmt.Println("Changed fade state")
+	return fad, err
+}
+
+func dbToggleState(db *bolt.DB) error {
+	var fad fadeState
+	// var toggle bool
+	err := db.View(func(tx *bolt.Tx) error {
+		fadBytes := tx.Bucket([]byte("DB")).Get([]byte("FADE"))
+
+		if err := json.Unmarshal(fadBytes, &fad); err != nil {
+			return fmt.Errorf("could not fetch fade state from db: %v", err)
+		}
+
+		p := fad
+
+		if p.Fade == true {
+			fad.Fade = false
+		}
+		if p.Fade == false {
+			fad.Fade = true
+		}
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("could not update vote: %v", err)
+	}
+	setFadeState(db, fad)
+	fmt.Println(fad)
+	return nil
+}
+
+//END FADE STATE STUFF
+
 func dbSetCurrrentBallotByBallot(db *bolt.DB, bal ballotStruct) error {
 	err := db.Update(func(tx *bolt.Tx) error {
 		err := tx.Bucket([]byte("DB")).Put([]byte("CURRENT_BALLOT"), []byte(bal.ID))
@@ -83,8 +146,8 @@ func dbSetCurrrentBallotByID(db *bolt.DB, id string) error {
 
 func dbAddBallot(db *bolt.DB, bal ballotStruct) error {
 	rand.Seed(time.Now().UnixNano())
-	var id = dbId;
-	dbId += 1;
+	var id = dbId
+	dbId += 1
 	fmt.Println("Adding ballot with id: ", id)
 
 	// while populating set some random ballot as the current ballot
@@ -194,11 +257,11 @@ func populateDB(db *bolt.DB) {
 func dbClearVotes(db *bolt.DB) {
 	db.Close()
 	e := os.Remove("./database/test.db")
-    if e != nil {
-        log.Fatal(e)
-    }
+	if e != nil {
+		log.Fatal(e)
+	}
 	setupDB()
-	dbId = 1000;
+	dbId = 1000
 }
 
 func dbExportDB(db *bolt.DB) {
@@ -213,7 +276,7 @@ func dbExportDB(db *bolt.DB) {
 			allBallots = append(allBallots, bal)
 			return nil
 		})
-		file, _ := json.MarshalIndent(allBallots, "", " ") 
+		file, _ := json.MarshalIndent(allBallots, "", " ")
 		_ = ioutil.WriteFile(strconv.Itoa(rand.Int())+".json", file, 0644)
 		return nil
 	})

@@ -63,6 +63,22 @@ func getPopulateDB(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, "")
 }
 
+func getFadeState(c *gin.Context) {
+	fad, err := dbGetFadeState(db)
+	if err != nil {
+		c.IndentedJSON(http.StatusInternalServerError, nil)
+		fmt.Println(err)
+		return
+	}
+	c.IndentedJSON(http.StatusOK, fad)
+	fmt.Println("Current fade state: ", fad)
+}
+
+func toggleFadeState(c *gin.Context) {
+	dbToggleState(db)
+	c.IndentedJSON(http.StatusOK, "Fade state toggled")
+}
+
 func getExportDB(c *gin.Context) {
 	dbExportDB(db)
 	c.IndentedJSON(http.StatusOK, "")
@@ -85,7 +101,7 @@ func wshandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Printf("Failed to set websocket upgrade: %+v", err)
 		return
 	}
-	
+
 	for {
 		t, msg, err := conn.ReadMessage()
 		if err != nil {

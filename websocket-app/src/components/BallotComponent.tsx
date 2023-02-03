@@ -11,9 +11,11 @@ import BallotInterface from "../interfaces/ballotInterface";
 import VoteInterface from "../interfaces/voteInterface";
 import promptInterface from "../interfaces/promptInterface";
 import { BallotContext } from "../context/BallotContext";
+import { StateContext } from "../context/StateContext";
 
 export default function BallotComponent() {
   const { currentBallot, setCurrentBallot } = React.useContext(BallotContext);
+  const { currentState, setGlobalState }= React.useContext(StateContext);
   
   // does the post request for the actual vote
   const DoVote = (p: promptInterface) => {
@@ -31,6 +33,9 @@ export default function BallotComponent() {
   
   return (
     <div>
+      <p>
+      {currentState.fade && <p>Screen is faded</p>}
+    </p>
     {/* <h1 className="heading">Vote for this</h1> */}
     <h2>{currentBallot.description}</h2>
     {/* <h3>Prompts are:</h3> */}

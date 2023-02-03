@@ -9,8 +9,8 @@ type promptStruct struct {
 }
 
 type ballotStruct struct {
-	ID          string   `json:"id"`
-	Description string   `json:"description"`
+	ID          string         `json:"id"`
+	Description string         `json:"description"`
 	Prompts     []promptStruct `json:"prompts"`
 }
 
@@ -19,9 +19,14 @@ type voteStruct struct {
 	PromptID string `json:"promptID"`
 }
 
+type fadeState struct {
+	Fade bool `json:"fade"`
+}
+
+var defaultFade = fadeState{false}
+
 var ballots = []ballotStruct{
-	{ID: "1", Description: "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.", Prompts: []promptStruct{
-	}},
+	{ID: "1", Description: "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.", Prompts: []promptStruct{}},
 	{ID: "2", Description: "What is cuter?", Prompts: []promptStruct{
 		{ID: "1", Name: "Puppies", Description: "", Votes: 0},
 		{ID: "2", Name: "Kittens", Description: "", Votes: 0},

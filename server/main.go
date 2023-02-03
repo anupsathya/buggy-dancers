@@ -23,6 +23,8 @@ func main() {
 	}
 	defer db.Close()
 
+	setFadeState(db, defaultFade)
+
 	// populateDB(db)
 	// dbClearVotes(db)
 	// populateDB(db)
@@ -54,6 +56,8 @@ func main() {
 	router.GET("/mysecretkey/resetdb", getClearVotes)
 	router.GET("/mysecretkey/populatedb", getPopulateDB)
 	router.GET("/mysecretkey/export", getExportDB)
+	router.GET("/mysecretkey/fadestate", getFadeState)
+	router.GET("/mysecretkey/togglefadestate", toggleFadeState)
 	router.POST("/vote", addVote)
 	router.Run(":8080")
 }
