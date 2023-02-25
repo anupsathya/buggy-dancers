@@ -32,8 +32,7 @@ export default function BallotComponent() {
   };
   
   return (
-    <div className={currentState.fade ? "fadestate active" : ""}>
-    </div>
+    <div className={currentState.fade ? "container fadestate active" : "container fadestate inactive"}>
     <div>
       {/* {currentState.fade && <div className="fadestate active"></div>} */}
     {/* <h1 className="heading">Vote for this</h1> */}
@@ -46,7 +45,7 @@ export default function BallotComponent() {
       {
         // only render the button if the ballot id is not in the list of already voted ids
         //!isVotedIdInStorage(currentBallot.id) && (
-        <button onClick={() => DoVote(p)} className="button is-green">Vote</button>
+        <button onClick={() => DoVote(p)} className="button is-green" disabled={currentState.fade ? true : false}>Vote</button>
         // <Button onClick={() => DoVote(p)} as="a" variant="primary">
         // Vote
         // </Button>
@@ -60,6 +59,7 @@ export default function BallotComponent() {
       </div>
       ))}
       </ul>
+      </div>
       </div>
       );
     }

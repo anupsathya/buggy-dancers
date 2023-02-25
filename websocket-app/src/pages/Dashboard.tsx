@@ -28,6 +28,17 @@ export default function Dashboard() {
     });        
   };
 
+  const toggleFade = () => {
+    axios
+    .get("http://139.144.18.143:8080/mysecretkey/togglefadestate")
+    .then((response) => {
+      console.log(response.data);
+    })
+    .catch((ex) => {
+      const error = "An unexpected error has occurred. Could not vote";
+    });        
+  };
+
   const resetDB = () => {
     axios
     .get("http://139.144.18.143:8080/mysecretkey/resetdb")
@@ -75,6 +86,7 @@ export default function Dashboard() {
         <button className="button is-green" onClick={() => resetDB()}>Delete DB (use caution)</button>
         <button className="button is-green" onClick={() => populateDB()}>Populate DB (use caution)</button>
         <button className="button is-green" onClick={() => exportDB()}>Export DB to server (use caution)</button>
+        <button className="button is-green" onClick={() => toggleFade()}>Toggle Fade State</button>
       </div>
       </div>
       );
