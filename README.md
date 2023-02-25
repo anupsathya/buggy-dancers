@@ -28,5 +28,9 @@ npm start
 ```
 nohup go run . &
 nohup npm start &
+```
+
+### Killing the apps running in the background
+```
 pkill -u admin
 ```
