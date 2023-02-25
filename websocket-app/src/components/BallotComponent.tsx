@@ -32,10 +32,9 @@ export default function BallotComponent() {
   };
   
   return (
+    <div className={currentState.fade ? "fadestate active" : ""}>
     <div>
-      <p>
-      {currentState.fade && <p>Screen is faded</p>}
-    </p>
+      {/* {currentState.fade && <div className="fadestate active"></div>} */}
     {/* <h1 className="heading">Vote for this</h1> */}
     <h2>{currentBallot.description}</h2>
     {/* <h3>Prompts are:</h3> */}
@@ -60,6 +59,7 @@ export default function BallotComponent() {
       </div>
       ))}
       </ul>
+      </div>
       </div>
       );
     }
