@@ -254,6 +254,7 @@ func populateDB(db *bolt.DB) {
 		dbAddBallot(db, bal)
 	}
 	dbSetCurrrentBallotByID(db, tempCurrBal)
+	setFadeState(db, defaultFade)
 	fmt.Println("Set current ballot to id: ", []byte(tempCurrBal))
 }
 
