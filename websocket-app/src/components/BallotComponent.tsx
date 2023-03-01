@@ -32,7 +32,7 @@ export default function BallotComponent() {
   };
   
   return (
-    <div className={currentState.fade ? "container fadestate active" : "container fadestate inactive"}>
+    <div className={currentState.fade ? "container fadestate inactive" : "container fadestate active"}>
     <div>
       {/* {currentState.fade && <div className="fadestate active"></div>} */}
     {/* <h1 className="heading">Vote for this</h1> */}
