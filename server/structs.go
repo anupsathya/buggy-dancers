@@ -27,7 +27,7 @@ var defaultFade = fadeState{false}
 
 var ballots = []ballotStruct{
 	{ID: "1", Description: "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.  Please make sure to set your phone screens to stay 'awake' for the duration of the performance", Prompts: []promptStruct{}},
-	{ID: "2", Description: "What is cuter?", Prompts: []promptStruct{
+	{ID: "2", Description: "Which is cuter?", Prompts: []promptStruct{
 		{ID: "1", Name: "Puppies", Description: "", Votes: 0},
 		{ID: "2", Name: "Kittens", Description: "", Votes: 0},
 		{ID: "3", Name: "Babies", Description: "", Votes: 0},
@@ -49,33 +49,33 @@ var ballots = []ballotStruct{
 		{ID: "1", Name: "Yes", Description: "", Votes: 0},
 		{ID: "2", Name: "No", Description: "", Votes: 0},
 	}},
-	{ID: "7", Description: "Choice 1", Prompts: []promptStruct{
-		{ID: "1", Name: "Turn Light Green", Description: "", Votes: 0},
-		{ID: "2", Name: "Turn Light Red", Description: "", Votes: 0},
-		{ID: "3", Name: "Turn Light Blue", Description: "", Votes: 0},
+	{ID: "7", Description: "Turn the robot's light...", Prompts: []promptStruct{
+		{ID: "1", Name: "Red", Description: "", Votes: 0},
+		{ID: "2", Name: "Green", Description: "", Votes: 0},
+		{ID: "3", Name: "Blue", Description: "", Votes: 0},
 	}},
-	{ID: "8", Description: "Choice 2", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (move to right hand)", Description: "", Votes: 0},
+	{ID: "8", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue Choreography (move to right arm)", Description: "", Votes: 0},
 		{ID: "2", Name: "Blinks", Description: "", Votes: 0},
 	}},
-	{ID: "9", Description: "Choice 3", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (robot travels across and all the way to belly)", Description: "", Votes: 0},
+	{ID: "9", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue choreography (travel across and all the way to the belly)", Description: "", Votes: 0},
 		{ID: "2", Name: "Move to shoulder (in opposite direction)", Description: "", Votes: 0},
 	}},
-	{ID: "10", Description: "Choice 4", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (change color)", Description: "", Votes: 0},
+	{ID: "10", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue choreography (change color)", Description: "", Votes: 0},
 		{ID: "2", Name: "Move back and forth", Description: "", Votes: 0},
 	}},
-	{ID: "11", Description: "Choice 5", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (robot travels to left hand/arm)", Description: "", Votes: 0},
+	{ID: "11", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue choreography (travel to left arm)", Description: "", Votes: 0},
 		{ID: "2", Name: "Backtrack (to knee)", Description: "", Votes: 0},
 	}},
-	{ID: "12", Description: "Choice 6", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (robot travels to ankle)", Description: "", Votes: 0},
-		{ID: "2", Name: "Move to wrist", Description: "", Votes: 0},
+	{ID: "12", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue choreography (travel to ankle)", Description: "", Votes: 0},
+		{ID: "2", Name: "Move back and forth", Description: "", Votes: 0},
 	}},
-	{ID: "13", Description: "Choice 7", Prompts: []promptStruct{
-		{ID: "1", Name: "Continue Choreography (robot exits the ankle)", Description: "", Votes: 0},
+	{ID: "13", Description: "Should the robot...", Prompts: []promptStruct{
+		{ID: "1", Name: "Continue choreography (exit at the ankle)", Description: "", Votes: 0},
 		{ID: "2", Name: "Vibrate", Description: "", Votes: 0},
 	}},
 	{ID: "14", Description: "How do you feel about Artificial Intelligence technology?", Prompts: []promptStruct{
@@ -91,10 +91,10 @@ var ballots = []ballotStruct{
 		{ID: "1", Name: "Connect", Description: "", Votes: 0},
 		{ID: "2", Name: "Disconnect", Description: "", Votes: 0},
 	}},
-	{ID: "17", Description: "What shape best symbolizes the future?", Prompts: []promptStruct{
-		{ID: "1", Name: "Triangle", Description: "", Votes: 0},
-		{ID: "2", Name: "Square", Description: "", Votes: 0},
-		{ID: "3", Name: "Circle", Description: "", Votes: 0},
+	{ID: "17", Description: "What color best symbolizes the future?", Prompts: []promptStruct{
+		{ID: "1", Name: "Red", Description: "", Votes: 0},
+		{ID: "2", Name: "Green", Description: "", Votes: 0},
+		{ID: "3", Name: "Blue", Description: "", Votes: 0},
 	}},
 	{ID: "18", Description: "Which word would you like to see used in a poem? ", Prompts: []promptStruct{
 		{ID: "1", Name: "Technology", Description: "", Votes: 0},

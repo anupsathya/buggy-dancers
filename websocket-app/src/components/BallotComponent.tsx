@@ -38,7 +38,7 @@ export default function BallotComponent() {
     {/* <h1 className="heading">Vote for this</h1> */}
     <h2>{currentBallot.description}</h2>
     {/* <h3>Prompts are:</h3> */}
-    <ul>
+    <ul className="no-indent">
     {currentBallot.prompts.map((p) => (
       <div className="panel">
       <li key={p.id}>
