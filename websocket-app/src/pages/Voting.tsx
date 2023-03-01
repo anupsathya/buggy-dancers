@@ -84,12 +84,12 @@ export default function Voting() {
       setLoading(false);
     })
     .catch((ex) => {
-      const error =
-      ex.code === "ECONNABORTED"
-      ? "A timeout has occurred"
-      : ex.response.status === 404
-      ? "Resource Not found"
-      : "An unexpected error has occurred";
+      const error = " "
+    //   ex.code === "ECONNABORTED"
+    //   ? "A timeout has occurred"
+    //   : ex.response.status === 404
+    //   ? "Resource Not found"
+    //   : "An unexpected error has occurred";
       setError(error);
       setLoading(false);
     });
