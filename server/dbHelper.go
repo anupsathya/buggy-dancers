@@ -122,8 +122,6 @@ func dbFadeTrue(db *bolt.DB) error {
 		if err := json.Unmarshal(fadBytes, &fad); err != nil {
 			return fmt.Errorf("could not fetch fade state from db: %v", err)
 		}
-
-		p := fad
 		fad.Fade = true
 		return nil
 	})
@@ -144,8 +142,6 @@ func dbFadeFalse(db *bolt.DB) error {
 		if err := json.Unmarshal(fadBytes, &fad); err != nil {
 			return fmt.Errorf("could not fetch fade state from db: %v", err)
 		}
-
-		p := fad
 		fad.Fade = false
 		return nil
 	})
