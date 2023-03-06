@@ -36,7 +36,7 @@ export default function BallotComponent() {
     <div>
       {/* {currentState.fade && <div className="fadestate active"></div>} */}
     {/* <h1 className="heading">Vote for this</h1> */}
-    <h2>{currentBallot.description}</h2>
+    <h3>{currentBallot.description}</h3>
     {/* <h3>Prompts are:</h3> */}
     <ul className="no-indent">
     {currentBallot.prompts.map((p) => (
