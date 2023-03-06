@@ -79,6 +79,16 @@ func toggleFadeState(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, "Fade state toggled")
 }
 
+func fadeTrue(c *gin.Context) {
+	dbFadeTrue(db)
+	c.IndentedJSON(http.StatusOK, "Fade state set to true")
+}
+
+func fadeFalse(c *gin.Context) {
+	dbFadeFalse(db)
+	c.IndentedJSON(http.StatusOK, "Fade state set to false")
+}
+
 func getExportDB(c *gin.Context) {
 	dbExportDB(db)
 	c.IndentedJSON(http.StatusOK, "")

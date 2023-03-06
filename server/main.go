@@ -58,6 +58,8 @@ func main() {
 	router.GET("/mysecretkey/export", getExportDB)
 	router.GET("/mysecretkey/fadestate", getFadeState)
 	router.GET("/mysecretkey/togglefadestate", toggleFadeState)
+	router.GET("/mysecretkey/fadetrue", fadeTrue)
+	router.GET("/mysecretkey/fadefalse", fadeFalse)
 	router.POST("/vote", addVote)
 	router.Run(":8080")
 }

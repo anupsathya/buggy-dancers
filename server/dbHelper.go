@@ -113,6 +113,50 @@ func dbToggleState(db *bolt.DB) error {
 	return nil
 }
 
+func dbFadeTrue(db *bolt.DB) error {
+	var fad fadeState
+	// var toggle bool
+	err := db.View(func(tx *bolt.Tx) error {
+		fadBytes := tx.Bucket([]byte("DB")).Get([]byte("FADE"))
+
+		if err := json.Unmarshal(fadBytes, &fad); err != nil {
+			return fmt.Errorf("could not fetch fade state from db: %v", err)
+		}
+
+		p := fad
+		fad.Fade = true
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("could not update vote: %v", err)
+	}
+	setFadeState(db, fad)
+	fmt.Println(fad)
+	return nil
+}
+
+func dbFadeFalse(db *bolt.DB) error {
+	var fad fadeState
+	// var toggle bool
+	err := db.View(func(tx *bolt.Tx) error {
+		fadBytes := tx.Bucket([]byte("DB")).Get([]byte("FADE"))
+
+		if err := json.Unmarshal(fadBytes, &fad); err != nil {
+			return fmt.Errorf("could not fetch fade state from db: %v", err)
+		}
+
+		p := fad
+		fad.Fade = false
+		return nil
+	})
+	if err != nil {
+		return fmt.Errorf("could not update vote: %v", err)
+	}
+	setFadeState(db, fad)
+	fmt.Println(fad)
+	return nil
+}
+
 //END FADE STATE STUFF
 
 func dbSetCurrrentBallotByBallot(db *bolt.DB, bal ballotStruct) error {
