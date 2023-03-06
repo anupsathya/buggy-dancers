@@ -23,7 +23,7 @@ type fadeState struct {
 	Fade bool `json:"fade"`
 }
 
-var defaultFade = fadeState{false}
+var defaultFade = fadeState{true}
 
 var ballots = []ballotStruct{
 	{ID: "1", Description: "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.  Please make sure to set your phone screens to stay 'awake' for the duration of the performance", Prompts: []promptStruct{}},
