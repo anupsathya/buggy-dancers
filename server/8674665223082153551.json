@@ -1,0 +1,355 @@
+[
+ {
+  "id": "1000",
+  "description": "Welcome to DANCExDANCE. There will be moments in the performance when you will be invited to participate via this webpage.  Please make sure to set your phone screens to stay 'awake' for the duration of the performance",
+  "prompts": []
+ },
+ {
+  "id": "1001",
+  "description": "Which is cuter?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Puppies",
+    "description": "",
+    "votes": 206
+   },
+   {
+    "id": "2",
+    "name": "Kittens",
+    "description": "",
+    "votes": 365
+   },
+   {
+    "id": "3",
+    "name": "Babies",
+    "description": "",
+    "votes": 293
+   }
+  ]
+ },
+ {
+  "id": "1002",
+  "description": "Which color do you prefer?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Red",
+    "description": "",
+    "votes": 134
+   },
+   {
+    "id": "2",
+    "name": "Green",
+    "description": "",
+    "votes": 390
+   },
+   {
+    "id": "3",
+    "name": "Blue",
+    "description": "",
+    "votes": 220
+   }
+  ]
+ },
+ {
+  "id": "1003",
+  "description": "Do you control your technology or does your technology control you?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Technology",
+    "description": "",
+    "votes": 273
+   },
+   {
+    "id": "2",
+    "name": "You",
+    "description": "",
+    "votes": 361
+   }
+  ]
+ },
+ {
+  "id": "1004",
+  "description": "Should we get on with the show already?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Yes",
+    "description": "",
+    "votes": 330
+   },
+   {
+    "id": "2",
+    "name": "No",
+    "description": "",
+    "votes": 399
+   }
+  ]
+ },
+ {
+  "id": "1005",
+  "description": "Do you believe that humans and robots will live in harmony?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Yes",
+    "description": "",
+    "votes": 146
+   },
+   {
+    "id": "2",
+    "name": "No",
+    "description": "",
+    "votes": 149
+   }
+  ]
+ },
+ {
+  "id": "1006",
+  "description": "Turn the robot's light...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Red",
+    "description": "",
+    "votes": 120
+   },
+   {
+    "id": "2",
+    "name": "Green",
+    "description": "",
+    "votes": 119
+   },
+   {
+    "id": "3",
+    "name": "Blue",
+    "description": "",
+    "votes": 138
+   }
+  ]
+ },
+ {
+  "id": "1007",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue Choreography (move to right arm)",
+    "description": "",
+    "votes": 137
+   },
+   {
+    "id": "2",
+    "name": "Blinks",
+    "description": "",
+    "votes": 217
+   }
+  ]
+ },
+ {
+  "id": "1008",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue choreography (travel across and all the way to the belly)",
+    "description": "",
+    "votes": 227
+   },
+   {
+    "id": "2",
+    "name": "Move to shoulder (in opposite direction)",
+    "description": "",
+    "votes": 180
+   }
+  ]
+ },
+ {
+  "id": "1009",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue choreography (change color)",
+    "description": "",
+    "votes": 137
+   },
+   {
+    "id": "2",
+    "name": "Move back and forth",
+    "description": "",
+    "votes": 148
+   }
+  ]
+ },
+ {
+  "id": "1010",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue choreography (travel to left arm)",
+    "description": "",
+    "votes": 22
+   },
+   {
+    "id": "2",
+    "name": "Backtrack (to knee)",
+    "description": "",
+    "votes": 60
+   }
+  ]
+ },
+ {
+  "id": "1011",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue choreography (travel to ankle)",
+    "description": "",
+    "votes": 38
+   },
+   {
+    "id": "2",
+    "name": "Move back and forth",
+    "description": "",
+    "votes": 66
+   }
+  ]
+ },
+ {
+  "id": "1012",
+  "description": "Should the robot...",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Continue choreography (exit at the ankle)",
+    "description": "",
+    "votes": 10
+   },
+   {
+    "id": "2",
+    "name": "Vibrate",
+    "description": "",
+    "votes": 34
+   }
+  ]
+ },
+ {
+  "id": "1013",
+  "description": "How do you feel about Artificial Intelligence technology?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Curious",
+    "description": "",
+    "votes": 1
+   },
+   {
+    "id": "2",
+    "name": "Ambivalent",
+    "description": "",
+    "votes": 6
+   },
+   {
+    "id": "3",
+    "name": "Fearful",
+    "description": "",
+    "votes": 5
+   }
+  ]
+ },
+ {
+  "id": "1014",
+  "description": "Which best describes how you encounter the unknown?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Uncertainty",
+    "description": "",
+    "votes": 1
+   },
+   {
+    "id": "2",
+    "name": "Excitement",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1015",
+  "description": "Does technology do more to connect us or disconnect us from each other?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Connect",
+    "description": "",
+    "votes": 1
+   },
+   {
+    "id": "2",
+    "name": "Disconnect",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1016",
+  "description": "What color best symbolizes the future?",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Red",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Green",
+    "description": "",
+    "votes": 2
+   },
+   {
+    "id": "3",
+    "name": "Blue",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ },
+ {
+  "id": "1017",
+  "description": "Which word would you like to see used in a poem? ",
+  "prompts": [
+   {
+    "id": "1",
+    "name": "Technology",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "2",
+    "name": "Unknown",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "3",
+    "name": "Connect",
+    "description": "",
+    "votes": 0
+   },
+   {
+    "id": "3",
+    "name": "Color",
+    "description": "",
+    "votes": 0
+   }
+  ]
+ }
+]

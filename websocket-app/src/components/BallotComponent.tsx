@@ -45,7 +45,7 @@ export default function BallotComponent() {
       {
         // only render the button if the ballot id is not in the list of already voted ids
         //!isVotedIdInStorage(currentBallot.id) && (
-        <button onClick={() => DoVote(p)} className="button is-green" disabled={currentState.fade ? true : false}>Vote</button>
+        <button onClick={() => DoVote(p)} className="button is-green" disabled={currentState.fade ? false : true}>Vote</button>
         // <Button onClick={() => DoVote(p)} as="a" variant="primary">
         // Vote
         // </Button>
