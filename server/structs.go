@@ -100,12 +100,9 @@ var ballots = []ballotStruct{
 		{ID: "1", Name: "Technology", Description: "", Votes: 0},
 		{ID: "2", Name: "Unknown", Description: "", Votes: 0},
 		{ID: "3", Name: "Connect", Description: "", Votes: 0},
-		{ID: "3", Name: "Color", Description: "", Votes: 0},
+		{ID: "4", Name: "Color", Description: "", Votes: 0},
 	}},
-	// {ID: "19", Description: "Choice 13", Prompts: []promptStruct{
-	// 	{ID: "1", Name: "Continue Choreography (move to shoulder)", Description: "", Votes: 0},
-	// 	{ID: "2", Name: "Move to shoulder via the ankle", Description: "", Votes: 0},
-	// }},
+	{ID: "19", Description: "", Prompts: []promptStruct{}},
 	// {ID: "20", Description: "Choice 14", Prompts: []promptStruct{
 	// 	{ID: "1", Name: "Continue Choreography (move to wrist)", Description: "", Votes: 0},
 	// 	{ID: "2", Name: "Cycle through colors and vibrate", Description: "", Votes: 0},

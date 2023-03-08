@@ -171,7 +171,7 @@ func dbSetCurrrentBallotByBallot(db *bolt.DB, bal ballotStruct) error {
 func dbSetCurrrentBallotByID(db *bolt.DB, id string) error {
 	err := db.Update(func(tx *bolt.Tx) error {
 		intID, err := strconv.Atoi(id)
-		if intID >= 1000 && intID <= 1017 && err == nil {
+		if intID >= 1000 && intID <= 1018 && err == nil {
 			err := tx.Bucket([]byte("DB")).Put([]byte("CURRENT_BALLOT"), []byte(id))
 			if err != nil {
 				return fmt.Errorf("could not set current ballot: %v", err)

@@ -12,19 +12,19 @@
     "id": "1",
     "name": "Puppies",
     "description": "",
-    "votes": 310
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Kittens",
     "description": "",
-    "votes": 390
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Babies",
     "description": "",
-    "votes": 92
+    "votes": 0
    }
   ]
  },
@@ -36,19 +36,19 @@
     "id": "1",
     "name": "Red",
     "description": "",
-    "votes": 170
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Green",
     "description": "",
-    "votes": 312
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Blue",
     "description": "",
-    "votes": 583
+    "votes": 0
    }
   ]
  },
@@ -60,13 +60,13 @@
     "id": "1",
     "name": "Technology",
     "description": "",
-    "votes": 291
+    "votes": 0
    },
    {
     "id": "2",
     "name": "You",
     "description": "",
-    "votes": 512
+    "votes": 0
    }
   ]
  },
@@ -78,13 +78,13 @@
     "id": "1",
     "name": "Yes",
     "description": "",
-    "votes": 424
+    "votes": 0
    },
    {
     "id": "2",
     "name": "No",
     "description": "",
-    "votes": 397
+    "votes": 0
    }
   ]
  },
@@ -114,19 +114,19 @@
     "id": "1",
     "name": "Red",
     "description": "",
-    "votes": 37
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Green",
     "description": "",
-    "votes": 270
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Blue",
     "description": "",
-    "votes": 247
+    "votes": 0
    }
   ]
  },
@@ -138,13 +138,13 @@
     "id": "1",
     "name": "Continue Choreography (move to right arm)",
     "description": "",
-    "votes": 128
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Blinks",
     "description": "",
-    "votes": 366
+    "votes": 0
    }
   ]
  },
@@ -156,13 +156,13 @@
     "id": "1",
     "name": "Continue choreography (travel across and all the way to the belly)",
     "description": "",
-    "votes": 48
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Move to shoulder (in opposite direction)",
     "description": "",
-    "votes": 344
+    "votes": 0
    }
   ]
  },
@@ -174,13 +174,13 @@
     "id": "1",
     "name": "Continue choreography (change color)",
     "description": "",
-    "votes": 146
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Move back and forth",
     "description": "",
-    "votes": 212
+    "votes": 0
    }
   ]
  },
@@ -192,13 +192,13 @@
     "id": "1",
     "name": "Continue choreography (travel to left arm)",
     "description": "",
-    "votes": 173
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Backtrack (to knee)",
     "description": "",
-    "votes": 132
+    "votes": 0
    }
   ]
  },
@@ -210,13 +210,13 @@
     "id": "1",
     "name": "Continue choreography (travel to ankle)",
     "description": "",
-    "votes": 121
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Move back and forth",
     "description": "",
-    "votes": 121
+    "votes": 0
    }
   ]
  },
@@ -228,13 +228,13 @@
     "id": "1",
     "name": "Continue choreography (exit at the ankle)",
     "description": "",
-    "votes": 41
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Vibrate",
     "description": "",
-    "votes": 320
+    "votes": 0
    }
   ]
  },
@@ -246,19 +246,19 @@
     "id": "1",
     "name": "Curious",
     "description": "",
-    "votes": 142
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Ambivalent",
     "description": "",
-    "votes": 36
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Fearful",
     "description": "",
-    "votes": 18
+    "votes": 0
    }
   ]
  },
@@ -270,13 +270,13 @@
     "id": "1",
     "name": "Uncertainty",
     "description": "",
-    "votes": 118
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Excitement",
     "description": "",
-    "votes": 122
+    "votes": 0
    }
   ]
  },
@@ -288,13 +288,13 @@
     "id": "1",
     "name": "Connect",
     "description": "",
-    "votes": 176
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Disconnect",
     "description": "",
-    "votes": 86
+    "votes": 0
    }
   ]
  },
@@ -306,19 +306,19 @@
     "id": "1",
     "name": "Red",
     "description": "",
-    "votes": 68
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Green",
     "description": "",
-    "votes": 114
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Blue",
     "description": "",
-    "votes": 78
+    "votes": 0
    }
   ]
  },
@@ -330,25 +330,25 @@
     "id": "1",
     "name": "Technology",
     "description": "",
-    "votes": 24
+    "votes": 0
    },
    {
     "id": "2",
     "name": "Unknown",
     "description": "",
-    "votes": 43
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Connect",
     "description": "",
-    "votes": 80
+    "votes": 0
    },
    {
     "id": "3",
     "name": "Color",
     "description": "",
-    "votes": 80
+    "votes": 0
    }
   ]
  }

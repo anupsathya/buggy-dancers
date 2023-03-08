@@ -37,6 +37,8 @@ export default function BallotComponent() {
       {/* {currentState.fade && <div className="fadestate active"></div>} */}
     {/* <h1 className="heading">Vote for this</h1> */}
     <h2>{currentBallot.description}</h2>
+    {/* <p>{currentBallot.id}</p> */}
+    {currentBallot.id == 1018 && <div><h2>We would really appreciate it if you could spend a few minutes to fill out this survey: </h2> <a className="survey-link button is-green" href="https://umdsurvey.umd.edu/jfe/form/SV_8GQnJ4s6Z4CPE8K">Survey Link (External)</a></div>}
     {/* <h3>Prompts are:</h3> */}
     <ul className="no-indent">
     {currentBallot.prompts.map((p) => (
