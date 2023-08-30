@@ -60,7 +60,7 @@ var ballots = []ballotStruct{
 	}},
 	{ID: "9", Description: "Should the robot...", Prompts: []promptStruct{
 		{ID: "1", Name: "Continue choreography (travel across and all the way to the belly)", Description: "", Votes: 0},
-		{ID: "2", Name: "Move to shoulder (in opposite direction)", Description: "", Votes: 0},
+		{ID: "2", Name: "Reverse to shoulder (in opposite direction)", Description: "", Votes: 0},
 	}},
 	{ID: "10", Description: "Should the robot...", Prompts: []promptStruct{
 		{ID: "1", Name: "Continue choreography (change color)", Description: "", Votes: 0},
