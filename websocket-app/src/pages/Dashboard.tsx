@@ -7,7 +7,7 @@ import BallotInterface from "../interfaces/ballotInterface";
 export default function Dashboard() {
   const [ballots, setBallots] = React.useState<any[]>([]);
   const fetchUsers = async () => {
-    const response = await axios.get("http://139.144.18.143:8080/mysecretkey/ballots");
+    const response = await axios.get("http://172.234.43.240:8080/mysecretkey/ballots");
     setBallots(response.data);
     console.log(response.data[0].id);
     console.log("test log");
@@ -19,7 +19,7 @@ export default function Dashboard() {
   
   const cueThis = (p) => {
     axios
-    .get("http://139.144.18.143:8080/mysecretkey/ballots/setCurrent/" + p.id)
+    .get("http://172.234.43.240:8080/mysecretkey/ballots/setCurrent/" + p.id)
     .then((response) => {
       console.log(response.data);
     })
@@ -30,7 +30,7 @@ export default function Dashboard() {
 
   const toggleFade = () => {
     axios
-    .get("http://139.144.18.143:8080/mysecretkey/togglefadestate")
+    .get("http://172.234.43.240:8080/mysecretkey/togglefadestate")
     .then((response) => {
       console.log(response.data);
     })
@@ -41,7 +41,7 @@ export default function Dashboard() {
 
   const resetDB = () => {
     axios
-    .get("http://139.144.18.143:8080/mysecretkey/resetdb")
+    .get("http://172.234.43.240:8080/mysecretkey/resetdb")
     .then((response) => {
       console.log(response.data);
     })
@@ -52,7 +52,7 @@ export default function Dashboard() {
 
   const populateDB = () => {
     axios
-    .get("http://139.144.18.143:8080/mysecretkey/populatedb")
+    .get("http://172.234.43.240:8080/mysecretkey/populatedb")
     .then((response) => {
       console.log(response.data);
     })
@@ -63,7 +63,7 @@ export default function Dashboard() {
 
   const exportDB = () => {
     axios
-    .get("http://139.144.18.143:8080/mysecretkey/export")
+    .get("http://172.234.43.240:8080/mysecretkey/export")
     .then((response) => {
       console.log(response.data);
     })

@@ -21,7 +21,7 @@ export default function BallotComponent() {
   const DoVote = (p: promptInterface) => {
     const vote: VoteInterface = { ballotID: currentBallot.id, promptID: p.id };
     axios
-    .post<BallotInterface>("http://139.144.18.143:8080/vote", vote)
+    .post<BallotInterface>("http://172.234.43.240:8080/vote", vote)
     .then((response) => {
       setCurrentBallot(response.data);
     })

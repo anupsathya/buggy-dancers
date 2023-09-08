@@ -8,7 +8,7 @@ import GlobalState from "../interfaces/globalState";
 import { StateContext } from "../context/StateContext";
 
 export const client = axios.create({
-  baseURL: "http://139.144.18.143:8080",
+  baseURL: "http://172.234.43.240:8080",
 });
 
 export default function Voting() {
